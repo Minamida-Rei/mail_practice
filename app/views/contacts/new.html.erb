@@ -3,6 +3,8 @@
 <%= form_with model: @contact do |f| %>
   <%= f.label :お名前 %><br>
   <%= f.text_field :name %><br>
+  <%= f.label :用件 %><br>
+  <%= f.collection_select(:subject_id, Subject.all, :id, :name, {}, {})%><br>
   <%= f.label :お問い合わせ内容 %><br>
   <%= f.text_field :message %><br>
   <%= f.submit '送信' %>
