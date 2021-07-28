@@ -38,7 +38,7 @@ Rails.application.configure do
     port: 587,
     address: 'smtp.gmail.com',
     domain: 'gmail.com',
-    user_name: ENV["PRACTICE_MAIL"],
+    user_name: ENV["ON_MAIL"],
     password: ENV["S_PASS"],
     enable_starttls_auto: true
   }
